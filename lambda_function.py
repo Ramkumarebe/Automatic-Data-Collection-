@@ -11,7 +11,7 @@ def lambda_handler(event, context):
     print(response)
   except requests.exceptions.RequestException as e:
    flag = {"text": "Server is down!"}
-   requests.post("https://hooks.slack.com/services/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", json=flag)
+   requests.post("https://hooks.slack.com/services/T04TGK7GHUJ/B04U6A0PY8Y/s14ZYclMhBveaiLVyeIwld", json=flag)
    print(e)
    return
    
